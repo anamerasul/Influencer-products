@@ -36,7 +36,8 @@
     padding: 0px;
 }
 .menu li a {
-    font-size: 15px;
+    font-size: 14px !important;
+    padding: 5px 10px;
 }
 
 .title h1{
@@ -71,10 +72,10 @@ margin: 10px;
 .bend-logo-menu .logo a {
     text-decoration: none;
     color: var(--h1-h2-h3-p-li-color);
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 36px;
+    line-height: 26px;
     letter-spacing: 0px;
     text-align: left;
 }
@@ -96,14 +97,18 @@ margin: 10px;
         left:0;
         flex-direction: column;
         background:linear-gradient(270deg,rgba(24, 24, 24, 0.11),rgba(0, 0, 0, 0.699));
-        padding:20px 0px;
+        padding:5px 0px;
         transform: translateY(-320px);
         transition: 0.8s ease-in-out;
         align-items: center;
         color: white;
     }
 
-    .menu li a{ color: white;}
+    .menu li a{
+         color: white;
+         padding: 5px 10px;
+         font-size: 16px;
+}
 
 
     #nav-toggle:checked ~.menu{
