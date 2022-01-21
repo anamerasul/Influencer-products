@@ -29,6 +29,9 @@
 .container {
     width: 100%;
 	}
+.logo a{
+        font-size: 15px;
+}
 .menu{
     padding: 0px 20px;
 }
@@ -36,8 +39,7 @@
     padding: 0px;
 }
 .menu li a {
-    font-size: 14px !important;
-    padding: 5px 10px;
+    font-size: 15px;
 }
 
 .title h1{
@@ -72,10 +74,10 @@ margin: 10px;
 .bend-logo-menu .logo a {
     text-decoration: none;
     color: var(--h1-h2-h3-p-li-color);
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 36px;
     letter-spacing: 0px;
     text-align: left;
 }
@@ -87,9 +89,21 @@ margin: 10px;
 
 @media (max-width: 667px) {
 .container {
-        width: 100%;
+        width: 80%;
+        padding: 0;
 }    
+.pic-fluid{
+    width:70%;
+}
 
+.bend-logo-menu .logo a{
+    font-size: 15px;
+}
+
+.bend-logo-menu{
+    margin:0 auto;
+    justify-content: space-around;
+}
 .menu{
         position:fixed;
         width:100%;
@@ -97,18 +111,14 @@ margin: 10px;
         left:0;
         flex-direction: column;
         background:linear-gradient(270deg,rgba(24, 24, 24, 0.11),rgba(0, 0, 0, 0.699));
-        padding:5px 0px;
+        padding:20px 0px;
         transform: translateY(-320px);
         transition: 0.8s ease-in-out;
         align-items: center;
         color: white;
     }
 
-    .menu li a{
-         color: white;
-         padding: 5px 10px;
-         font-size: 16px;
-}
+    .menu li a{ color: white;}
 
 
     #nav-toggle:checked ~.menu{
@@ -134,9 +144,41 @@ margin: 10px;
         
         
     }
+
+    .title h1{
+        color:var(--h1-h2-h3-p-li-color);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0px;
+        text-align: left;
+        
+        }
+        
+        .title p{
+            color:var(--h1-h2-h3-p-li-color);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: left;
+            
+        }
     .banner-left{
         order:1;
-        background-position: 10px;
+        background-position: -90px -90px;
+        /* background-size: 70% 70%; */
+        width: 75%;
+        position: relative;
+        top:0px;
+        left:100px;
+        overflow-x: hidden;
+    }
+
+    .banner-left img{
+        width: 50%;
     }
 
     .banner-right{
@@ -144,7 +186,8 @@ margin: 10px;
     }
 
     .ecommerece{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:0px;
     }
 
     #lights,#drone,#airpod{
